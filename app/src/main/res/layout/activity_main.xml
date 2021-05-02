@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/background_dark" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Olá Mundo! Teste de Permissões"
+        android:textAlignment="center" />
+    <Button
+        android:id="@+id/bt_load_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="callLoadImage"
+        android:text="Carregar Imagem" />
+    <Button
+        android:id="@+id/bt_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="callWriteOnSDCard"
+        android:text="Escrever no Cartão SD" />
+    <Button
+        android:id="@+id/bt_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="callReadFromSDCard"
+        android:text="Ler o Cartão SD" />
+    <Button
+        android:id="@+id/bt_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="callAccessLocation"
+        android:text="Acessar a Localização" />
+</LinearLayout>
