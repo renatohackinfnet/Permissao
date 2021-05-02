@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
                 try {
                     locationManager.requestLocationUpdates(
                             LocationManager.GPS_PROVIDER,
-                            2000L, 0f, locationListener)
+                            5000L, 0f, locationListener)
                 } catch(ex: SecurityException) {
                     Log.d("Permissao", "Security Exception")
                 }
@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
                 try {
                     locationManager.requestLocationUpdates(
                             LocationManager.NETWORK_PROVIDER,
-                            2000L, 0f, locationListener)
+                            5000L, 0f, locationListener)
                 } catch(ex: SecurityException) {
                     Log.d("Permissao", "Security Exception")
                 }
